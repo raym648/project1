@@ -10,10 +10,75 @@ h1{
 .container{
     width: 100%;
 }
+
+#gui_nav_bar{
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+
+}
+.wraper-lev{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;    
+    
+}
+.header-logo-lev img{
+    height: 2.5rem;
+    width: 10rem;
+}
+.header-logo-lev img:nth-child(2){
+    display: none;
+}
+.header-list-lev ul{    
+    display: flex;
+    justify-content: flex-end;
+    align-content: end;
+    align-items: center;
+}
+.gui_nav_ul li{
+    
+    display: flex;
+    justify-content: flex-end;    
+    list-style-type: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+.gui_nav_ul li:nth-child(4){
+    border: 2px solid #75daad;
+    border-radius: .3rem;
+
+}
+.gui_nav_bar_trial{
+    color: #75daad !important;
+    background-color: #fff;
+    transition: all .6s;
+}
+.gui_nav_ul li a{
+    padding: 10px;
+    color: rgb(149, 149, 149);
+    text-decoration: none;
+    font-weight: 500; 
+    transition: all .3s ;
+    outline: none;
+}
+.gui_nav_ul li a:hover{
+    color: #1b262c;
+}
+.gui_nav_bar_trial:hover{
+    background-color: #75daad;
+    color: #fff !important;
+}
 /*styling banner--------------------------------------------------------------------------------------*/
 .banner-lev{
     width: 100%;
-    height: 80vh;
+    height: 88vh;
     background-size: cover;
     background-image:linear-gradient(19deg,rgb(21, 24, 41),rgb(31, 34, 53),rgba(46, 50, 82, 0.7),rgba(46, 50, 82, 0.4), rgba(66, 72, 116, .2)),
     url('../img/blur-close-up-code-computer-546819.jpg');
@@ -28,6 +93,7 @@ h1{
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
+    margin-top: 5rem;
 }
 .banner-welcome-lev{
     width: 35%;
@@ -63,6 +129,7 @@ h1{
 }
 .form-banner-lev{
     display: flex;
+    height: 30rem;
     flex-direction: column;
     width: 40%;
     box-sizing: border-box;
@@ -180,7 +247,7 @@ input[type="button"]:hover{
     margin:auto;
 }
 .video-banner{
-    margin: 2rem 1.5rem ;
+    margin: 9rem 1.5rem ;
     display: flex;
     justify-content: center;
     height: 100%;
@@ -208,6 +275,10 @@ input[type="button"]:hover{
 @media screen and (max-width:960px){
     .video-banner , .second-paragraph{
         flex-direction: column;
+        margin: .5rem auto !important;
+    }
+    .video-banner video{
+        height: 55vh;
     }
     .valuable-img , .supportive-img{
         width: 300px;
@@ -227,6 +298,30 @@ input[type="button"]:hover{
     .partner-img-container{
         height: 50rem !important;
         flex-direction: column;
+    }
+    /****** nav bar ********/
+    .header-logo-lev img:nth-child(1){
+        display: none;
+    }
+    .header-logo-lev img:nth-child(2){
+
+    display:inline-block ;
+    width: 2.5rem;
+    }
+    .first-nav-lev{
+        display: none !important;
+    }
+    .wraper-lev{
+        justify-content: space-between;
+    }
+    .line1-menu , .line2-menu , .line3-menu{
+        width: 2rem;
+        height: .1rem;
+        background-color: #777;
+        margin-bottom: .6rem;
+    }
+    .menu-icon-lev{
+        cursor: pointer;
     }
 
 }
@@ -358,19 +453,21 @@ footer{
     html{
         font-size: 13px;
     }
-    .banner-container-lev{
+    .banner-lev .banner-container-lev{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         width: 100%;
+        margin: 8rem auto;
 
     }
     .banner-lev{
         flex-wrap: wrap;
-        height: 60rem;
+        height: 80rem;
         box-sizing: border-box;
+        justify-content: space-between;
     }
     .banner-welcome-lev{
         width: 80%;
@@ -479,6 +576,11 @@ footer{
 @media screen and (max-width:1210px){
     .flexible-img{
         display : none;
+    }
+}
+@media screen and (max-width:680px){
+    .gui_nav_ul .third-nav-lev{
+        display: none;
     }
 }
 

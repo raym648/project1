@@ -1,0 +1,109 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: "josefin sans", sans-serif;
+    color: #1b262c;
+    background-color: rgb(199, 179, 179);
+}
+#gui_nav_bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: black;
+
+}
+.header-logo-lev img{
+    height: 2.5rem;
+    width: 10rem;
+}
+.header-list-lev ul{    
+    display: flex;
+    justify-content: flex-end;
+    align-content: end;
+    align-items: center;
+    width: 50%;
+    margin-left: 30%;
+}
+.gui_nav_ul li{
+    
+    display: flex;
+    justify-content: flex-end;    
+    list-style-type: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+.gui_nav_ul li:nth-child(4){
+    border: 2px solid #75daad;
+    border-radius: .3rem;
+
+}
+.gui_nav_bar_trial{
+    color: #75daad !important;
+    background-color: #fff;
+    transition: all .6s;
+}
+.gui_nav_ul li a{
+    padding: 10px;
+    color: rgb(149, 149, 149);
+    text-decoration: none;
+    font-weight: 500; 
+    transition: all .3s ;
+}
+.gui_nav_ul li a:hover{
+    color: #1b262c;
+}
+.gui_nav_bar_trial:hover{
+    background-color: #75daad;
+    color: #fff !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 660px){
+
+    .mob0{ display: none; }
+    .mob1{ width: 8.33%; box-sizing: border-box;}
+    .mob2{ width: 16.66%; box-sizing: border-box; }
+    .mob3{ width: 25%; box-sizing: border-box;}
+    .mob4{ width: 33.33%; box-sizing: border-box;}
+    .mob5{ width: 41.66%; box-sizing: border-box;}
+    .mob6{ width: 50%; box-sizing: border-box; }
+    .mob7{ width: 58.33%; box-sizing: border-box;}
+    .mob8{ width: 66.66%; box-sizing: border-box; }
+    .mob9{ width: 75%; box-sizing: border-box;}
+    .mob10{ width: 83.33%; box-sizing: border-box; }
+    .mob11{ width: 91.66%; box-sizing: border-box; }
+    .mob12{ width: 100%; box-sizing: border-box; }
+}
+
+@media screen and (min-width: 960px){
+
+    .dsk0{ display: none; }
+    .dsk1{ width: 8.33%;  box-sizing: border-box; }
+    .dsk2{ width: 16.66%;  box-sizing: border-box;  }
+    .dsk3{ width: 25%;  box-sizing: border-box; }
+    .dsk4{ width: 33.33%;  box-sizing: border-box; }
+    .dsk5{ width: 41.66%;  box-sizing: border-box; }
+    .dsk6{ width: 50%;  box-sizing: border-box; }
+    .dsk7{ width: 58.33%;  box-sizing: border-box; }
+    .dsk8{ width: 66.66%;  box-sizing: border-box; }
+    .dsk9{ width: 75%;  box-sizing: border-box; }
+    .dsk10{ width: 83.33%;  box-sizing: border-box; }
+    .dsk11{ width: 91.66%;  box-sizing: border-box; }
+    .dsk12{ width: 100%;  box-sizing: border-box; }
+}
