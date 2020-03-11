@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(219, 219, 219);
+}
+#gui_nav_bar{
+    display: flex;    
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+}
+#gui_nav_logo{
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin-left: 10px;
+}
+#gui_nav_bar ul{    
+    display: flex;
+    justify-content: flex-end;
+    align-content: end;
+    align-items: center;
+    width: 50%;
+    margin-left: 30%;
+}
+#gui_nav_bar li{
+    
+    display: flex;
+    justify-content: flex-end;    
+    list-style-type: none;
+    text-align: center;
+}
+#gui_nav_bar a{
+    padding: 10px;
+    color: rgb(149, 149, 149) ; */
+}
