@@ -2,16 +2,20 @@ body{
     padding: 0%;
     margin: 0%;
     font-family: "josefin sans", sans-serif;
+    color: #1b262c;
 }
 h1{
     margin: 0em;
 }
+.container{
+    width: 100%;
+}
 /*styling banner--------------------------------------------------------------------------------------*/
 .banner-lev{
     width: 100%;
-    height: 50rem;
+    height: 80vh;
     background-size: cover;
-    background-image:linear-gradient(to top,rgba(1, 50, 67, 1),rgba(1, 50, 67, .8), rgba(1, 50, 67, .4)),
+    background-image:linear-gradient(19deg,rgb(21, 24, 41),rgb(31, 34, 53),rgba(46, 50, 82, 0.7),rgba(46, 50, 82, 0.4), rgba(66, 72, 116, .2)),
     url('../img/blur-close-up-code-computer-546819.jpg');
     display: flex;
     flex-direction: column;
@@ -27,7 +31,7 @@ h1{
 }
 .banner-welcome-lev{
     width: 35%;
-    height: 20rem;
+    height: 60%;
     padding-top: 1.3rem;
 }
 .welcome-lev{
@@ -115,9 +119,11 @@ label{
 
 
 hr{
-    width: 80%;
-    height: .3px;
-    color: #eee;
+    width: 100%;
+    height: 1.8px;
+    background-color: #eee;
+    color: #999;
+    border: none;
 }
 
 
@@ -155,7 +161,111 @@ input[type="button"]:hover{
     font-size: 3rem;
 }
 
+.background-img{
+    background: url(../img/Untitled\ design.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.main{
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin:auto;
+}
+.video-banner{
+    margin: 2rem 1.5rem ;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.flexible-head{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start ;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+.flexible-heading , .supportive-heading , .valuable-heading{
+    font-size: 2.5rem;
+    padding: 1rem 2rem 3rem .3rem;
+}
+.flexible-paragraph , .supportive-paragraph , .valuable-paragraph{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #777;
+}
+.flexible-img{
+    margin-left: -5rem;
+}
 
+@media screen and (max-width:960px){
+    .video-banner , .second-paragraph{
+        flex-direction: column;
+    }
+    .valuable-img , .supportive-img{
+        width: 300px;
+        text-align: center;
+    }
+    .flexible-head {
+        margin: 2rem auto;
+    }
+    .supportive , .valuable{
+        height: 50rem;
+        margin: 1rem auto;
+        
+    }
+    .partner-img-container img{
+        width: 250px;
+    }
+    .partner-img-container{
+        height: 50rem !important;
+        flex-direction: column;
+    }
+
+}
+
+
+.second-paragraph{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 2rem;
+}
+.supportive-img , .valuable-img{
+    margin: 2rem auto;
+    align-items: center;
+}
+.supportive ,.valuable{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.treehouse-partner{
+    display: flex;
+    flex-direction: column;
+
+}
+.partner-heading{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 300;
+
+}
+.partner-img-container{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    height: 12rem
+}
 
 
 
@@ -349,7 +459,7 @@ footer{
     .mob12{ width: 100%; box-sizing: border-box; }
 }
 
-@media screen and (min-width: 660px){
+@media screen and (min-width: 960px){
 
     .dsk0{ display: none; }
     .dsk1{ width: 8.33%;  box-sizing: border-box; }
@@ -364,6 +474,12 @@ footer{
     .dsk10{ width: 83.33%;  box-sizing: border-box; }
     .dsk11{ width: 91.66%;  box-sizing: border-box; }
     .dsk12{ width: 100%;  box-sizing: border-box; }
+}
+/* for the svg img*/
+@media screen and (max-width:1210px){
+    .flexible-img{
+        display : none;
+    }
 }
 
 /** media query ***********************************************************/
