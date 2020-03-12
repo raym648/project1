@@ -1,0 +1,426 @@
+    footer {
+        background-color: #fff;
+        width: 100%;
+        height: 20rem;
+        display: flex;
+    }
+    
+    .part1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+    }
+    
+    .logo-footer {
+        width: 12rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo-footer img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .copyright P {
+        font-size: 1.2rem;
+        color: #999;
+        letter-spacing: .15rem;
+    }
+    /*footer part 2---------------------------------------------------------------------------------------------*/
+    
+    .part2 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 40%;
+    }
+    
+    .footer-lists,
+    .social-list {
+        list-style: none;
+        margin: 0rem;
+        padding: 0rem;
+    }
+    
+    .footer-lists-items {
+        padding: .1rem;
+        margin: .2rem .4rem;
+    }
+    
+    .footer-lists-items a {
+        text-decoration: none;
+        color: #999;
+        font-size: 1.7rem;
+        transition: color .5s;
+        cursor: pointer;
+    }
+    
+    .footer-lists-items a:hover {
+        color: #222;
+    }
+    /*end of footer part 2----------------------------------------------------------------------------------*/
+    /*footer  part 3--------------------------------------------------------------------------------------------*/
+    
+    .part3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .social-list {
+        display: flex;
+    }
+    
+    .social-list li a {
+        font-size: 2rem;
+        padding-left: .9rem;
+        color: #222;
+        transition: all .5s;
+    }
+    
+    .social-list li a:hover {
+        color: rgb(14, 146, 10);
+    }
+    /*end of footer part 3------------------------------------------------------------------------------------*/
+    /* media query for the footer----------------------------------------------------------------------------*/
+    
+    @media screen and (max-width:960px) {
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            height: 30REM;
+        }
+        .part1,
+        .part2,
+        .part3 {
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .footer-lists-items a {
+            text-decoration: none;
+            color: #999;
+            font-size: 1rem;
+        }
+        .footer-lists {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    /*  -----CSS Team Page ----------------------------------------- */
+    
+    body {
+        font-family: "josefin Sans";
+    }
+    /* first section */
+    
+    .wil-entete {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        background-image: url("img/working-pattern-internet-abstract-1089438.jpg");
+        background-size: cover;
+        width: 100%;
+        min-height: 25rem;
+    }
+    
+    .wil-entete h1 {
+        margin-left: 10%;
+        margin-top: 10%;
+        font-size: 40px;
+        width: 50%;
+    }
+    
+    .wil-entete p {
+        font-size: 20px;
+        margin-left: 10%;
+        margin-top: 1%;
+        width: 50%;
+    }
+    
+    .wil-enteteButton {
+        background-color: rgba(237, 239, 240, 1);
+        color: #4b5658;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 4%;
+        margin-left: 10%;
+    }
+    /* second section */
+    
+    .wil-empower {
+        background-color: rgba(247, 247, 247, 0);
+        margin-top: 2%;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    
+    .wil-empower h2 {
+        font-size: 30px;
+        margin-bottom: 2%;
+    }
+    
+    .wil-empower p {
+        color: rgb(123, 139, 142);
+        margin-left: 10%;
+        width: 80%;
+        margin-bottom: 2%;
+    }
+    /* third section */
+    
+    .wil-partners {
+        margin-bottom: 2%;
+        margin-top: 6%;
+        text-align: center;
+        background-color: rgba(207, 179, 179, 0);
+    }
+    
+    .wil-partners h2 {
+        font-size: 30px;
+    }
+    
+    .wil-partners ul {
+        margin-left: 5%;
+        margin-top: 6%;
+        justify-content: space-evenly;
+        width: 90%;
+        display: flex;
+    }
+    
+    .wil-partners img {
+        vertical-align: bottom;
+        width: 100px;
+    }
+    
+    .wil-partnersText {
+        display: flex;
+        justify-content: center;
+        color: rgb(123, 139, 142);
+    }
+    
+    .wil-partnersText div {
+        justify-content: space-between;
+        margin-top: 6%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+    /* fourth section */
+    
+    .wil-tech {
+        text-align: center;
+        color: white;
+        background-image: linear-gradient(19deg, rgb(21, 24, 41), rgb(31, 34, 53), rgba(46, 50, 82, 0.7), rgba(46, 50, 82, 0.4), rgba(66, 72, 116, .2)), url("img/coding-computer-data-depth-of-field-577585.jpg");
+        background-size: cover;
+        height: 20rem;
+    }
+    
+    .wil-tech h2 {
+        padding-top: 6%;
+        font-size: 30px;
+    }
+    
+    .wil-tech div {
+        text-align: left;
+        margin: 4%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .wil-tech ul {
+        list-style: initial;
+    }
+    /* fifth section */
+    
+    .wil-learningsec {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        background-color: #2284A5;
+        padding-bottom: 4%;
+    }
+    
+    .wil-learningsec h2 {
+        padding-top: 4%;
+        padding-bottom: 4%;
+        font-size: 30px;
+    }
+    
+    .wil-learningsec h3 {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-size: 20px;
+    }
+    
+    .wil-learningsec ul {
+        display: flex;
+    }
+    
+    .wil-learningsec ul li {
+        text-align: left;
+        width: 90%;
+        justify-content: space-evenly;
+        display: flex;
+        margin: 5%;
+    }
+    
+    .wil-learningsec ul li div {
+        margin-left: 5%;
+    }
+    /* sixth section */
+    
+    .wil-use {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 4%;
+        text-align: center;
+    }
+    
+    .wil-use h2 {
+        padding-bottom: 2%;
+        font-size: 30px;
+    }
+    
+    .wil-use h3 {
+        padding-bottom: 1%;
+        font-size: 20px;
+    }
+    
+    .wil-use p {
+        margin-top: 20px;
+        color: rgb(123, 139, 142);
+    }
+    
+    .wil-use li {
+        margin-top: 2%;
+        padding-left: 15%;
+        text-align: left;
+        width: 70%;
+        display: flex;
+    }
+    
+    .wil-useDescription {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #wil-useEntete {
+        width: 50%;
+    }
+    /* seventh section */
+    
+    .wil-ressources {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .wil-ressources h2 {
+        margin-bottom: 2.5%;
+        font-size: 30px;
+    }
+    
+    .wil-ressources h3 {
+        color: #576366;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .wil-ressourcresArticle {
+        text-align: left;
+        padding: 2%;
+        width: 40%;
+        border: solid;
+        border-radius: 5%;
+    }
+    
+    .wil-ressourcesColumn {
+        padding: 5%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .wil-ressources button {
+        margin-top: 10px;
+        border-radius: 20%;
+        padding: 10px;
+        color: white;
+        background-color: teal;
+    }
+    
+    .wil-ressources p {
+        color: #576366;
+    }
+    /* eigth section */
+    
+    .wil-formSec {
+        color: white;
+        text-align: center;
+        background-image: linear-gradient(19deg, rgb(21, 24, 41), rgb(31, 34, 53), rgba(46, 50, 82, 0.7), rgba(46, 50, 82, 0.4), rgba(66, 72, 116, .2)), url("img/business-computer-connection-contemporary-450035.jpg");
+        background-size: cover;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+    
+    .wil-formSec h2 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    
+    .wil-formSec form div {
+        text-align: left;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .wil-formsecColumnns {
+        margin-bottom: 10px;
+        margin: 5px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .wil-formsecColumnnsBot {
+        padding-left: 12.5%;
+        margin: 5px;
+        width: 74%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #wil-formBot {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .wil-formSec input {
+        border-radius: 10%;
+    }
+    
+    #wil-formButton {
+        border-radius: 10%;
+        padding: 5px;
+        width: 12.5%;
+    }
+    
+    #wil-formEntete {
+        padding: 5%;
+    }
