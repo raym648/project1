@@ -398,7 +398,7 @@ footer {
         display: flex;
         flex-direction: column;
         color: white;
-        background-image: url("img/working-pattern-internet-abstract-1089438.jpg");
+        background-image: url("../img/working-pattern-internet-abstract-1089438.jpg");
         background-size: cover;
         width: 100%;
         min-height: 25rem;
@@ -478,7 +478,7 @@ footer {
     .wil-tech {
         text-align: center;
         color: white;
-        background-image: linear-gradient(19deg, rgb(21, 24, 41), rgb(31, 34, 53), rgba(46, 50, 82, 0.7), rgba(46, 50, 82, 0.4), rgba(66, 72, 116, .2)), url("img/coding-computer-data-depth-of-field-577585.jpg");
+        background-image: linear-gradient(19deg, rgb(21, 24, 41), rgb(31, 34, 53), rgba(46, 50, 82, 0.7), rgba(46, 50, 82, 0.4), rgba(66, 72, 116, .2)), url("../img/coding-computer-data-depth-of-field-577585.jpg");
         background-size: cover;
         height: 20rem;
     }
@@ -605,7 +605,7 @@ footer {
     .wil-formSec {
         color: white;
         text-align: center;
-        background-image: linear-gradient(19deg, rgb(21, 24, 41), rgb(31, 34, 53), rgba(46, 50, 82, 0.7), rgba(46, 50, 82, 0.4), rgba(66, 72, 116, .2)), url("img/business-computer-connection-contemporary-450035.jpg");
+        background-image: linear-gradient(19deg, rgb(21, 24, 41), rgb(31, 34, 53), rgba(46, 50, 82, 0.7), rgba(46, 50, 82, 0.4), rgba(66, 72, 116, .2)), url("../img/business-computer-connection-contemporary-450035.jpg");
         background-size: cover;
         padding-bottom: 5%;
         padding-top: 5%;
@@ -667,12 +667,13 @@ footer {
         display: flex;
         flex-direction: column;
         color: white;
-        background-image: url("img/working-pattern-internet-abstract-1089438.jpg");
+        background-image: url("../img/working-pattern-internet-abstract-1089438.jpg");
         background-size: cover;
         width: 100%;
         min-height: 25rem;
     }
     .wil-entete h1 {
+        padding-top: 2%;
         margin-left: 10%;
         margin-top: 10%;
         font-size: 30px;
@@ -750,7 +751,7 @@ footer {
     .wil-tech {
         text-align: center;
         color: white;
-        background-image: linear-gradient(19deg, rgb(21, 24, 41), rgb(31, 34, 53), rgba(46, 50, 82, 0.7), rgba(46, 50, 82, 0.4), rgba(66, 72, 116, .2)), url("img/coding-computer-data-depth-of-field-577585.jpg");
+        background-image: linear-gradient(19deg, rgb(21, 24, 41), rgb(31, 34, 53), rgba(46, 50, 82, 0.7), rgba(46, 50, 82, 0.4), rgba(66, 72, 116, .2)), url("../img/coding-computer-data-depth-of-field-577585.jpg");
         background-size: cover;
         height: 20rem;
     }
@@ -882,7 +883,7 @@ footer {
     .wil-formSec {
         color: white;
         text-align: center;
-        background-image: linear-gradient(19deg, rgb(21, 24, 41), rgb(31, 34, 53), rgba(46, 50, 82, 0.7), rgba(46, 50, 82, 0.4), rgba(66, 72, 116, .2)), url("img/business-computer-connection-contemporary-450035.jpg");
+        background-image: linear-gradient(19deg, rgb(21, 24, 41), rgb(31, 34, 53), rgba(46, 50, 82, 0.7), rgba(46, 50, 82, 0.4), rgba(66, 72, 116, .2)), url("../img/business-computer-connection-contemporary-450035.jpg");
         background-size: cover;
         padding-bottom: 5%;
         padding-top: 5%;
