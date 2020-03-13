@@ -7,13 +7,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,423;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,423;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css" type="text/css" />
     <link rel="stylesheet" href="team-style.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/1c8d8e89d7.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <header>
 
+        <!--start navbar-->
+        <nav id="gui_nav_bar">
+            <!-- container of nav-->
+            <div class="wraper-lev">
+                <!--menu toggle-->
+                <div class="menu-icon-lev" id="toggleMenuButton" onclick="burger-menu">
+                    <!--<input type="checkbox" />-->
+                    <div class="line1-menu"></div>
+                    <div class="line2-menu"></div>
+                    <div class="line3-menu"></div>
+                </div>
+                <!--end menu toggle-->
+                <!-- page logo-->
+                <div class="header-logo-lev dsk3">
+                    <a class="dsk-logo" href="index.html"><img src="https://cdn.freelogovectors.net/wp-content/uploads/2016/12/treehouse-logo.png" alt="veev"></a>
+                    <a class="mob-logo" href="index.html"><img src="https://webhostingforstudents.com/wp-content/uploads/2014/08/Treehouse-Logo.png" alt="tgvev"></a>
+                </div>
+                <!--end page logo-->
+                <!-- navigation lists-->
+                <div class="header-list-lev dsk7 ">
+                    <ul id="menu" class="gui_nav_ul">
+                        <li class="first-nav-lev"><a href="https://teamtreehouse.com/techdegree">Techdegree</a></li>
+                        <li class="first-nav-lev"><a href="team.index">Team</a></li>
+                        <li class="third-nav-lev"><a href="signin.html">Sign in</a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="gui_nav_bar_trial" href="">Free trial</a></li>
+                    </ul>
+                </div>
+                <!-- end navigation list-->
+            </div>
+            <!--end container of nav-->
+        </nav>
     </header>
+    <!--end of nav-->
     <section class="wil-entete">
         <h1>Online learning programs designed for your team.</h1>
         <p>Companies across the world are using Treehouse to deliver on-demand training to their employees.</p>
@@ -40,6 +75,7 @@
                 <li><img src="img/87f3cbb2-fanduel_02i01v000000000000001.png" alt="lorem"></li>
             </ul>
             <div class="wil-partnersText">
+
                 <div>
                     <p>"The courses are tailor-made to suit my team and there are great tools to track progress."</p>
                     <h4>— Code Black Belt</h4>
@@ -133,7 +169,7 @@
                     <p>Quickly see how your teams are utilizing Treehouse with aggregated activity data. Adjustable timelines give insight into when members are most active. Activity feeds also allow you to see what content people are engaging with most.</p>
                 </div>
             </li>
-            <li>
+            <li id="wil-useRevers">
                 <div class="wil-useDescription">
                     <h3>Exportable reports</h3>
                     <p>If additional insights are needed, exportable reports allow you to further analyze team usage and session metrics, giving you the opportunity to develop custom reporting for your board. </p>
@@ -269,6 +305,34 @@
         </div>
         <!--end of footer part 2-->
     </footer>
+    <script>
+        function burgerMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.opacity == 0) {
+                menu.style.opacity = 1;
+            } else {
+                menu.style.opacity = 0;
+            }
+        }
+
+
+        /*function closeMenu{
+            var menu = document.getElementById("menu");
+            menu.style.opacity = O;
+        }*/
+
+        //we gonna catch the selected element (aka menu);
+        // by using some javascript methods :)
+        // 'n we store it into a variable called toggleMenuButton'
+        var btn = document.getElementById("toggleMenuButton");
+
+        // then, we add some event listeners on it (in order to catch user events like "click")
+        // when we click on the selected button, it' s gonna call the burgermenu function, that's what we call a "callback function".
+
+        btn.addEventListener("click", burgerMenu);
+        //btn.addEventListener("click", closeMenu)
+        //btn.removeEventListener("click", burgerMenu);
+    </script>
 </body>
 
 </html>
