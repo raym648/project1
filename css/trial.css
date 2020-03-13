@@ -10,12 +10,84 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     width: 100%;
 }
-/* ------------------------------------------------ */
+
+/* ---------------Header---------------- */
+
+.wraper-lev{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;    
+
+    }
+    .header-logo-lev a:first-child img{
+    height: 2.5rem;
+    width: 10rem;
+    }
+    .header-logo-lev a:nth-child(2) img{
+    display: none;
+    }
+    .header-list-lev{
+    display: flex;
+    justify-content: flex-end;
+
+    }
+    .header-list-lev ul{    
+    display: flex;
+    justify-content: flex-end;
+    align-content: end;
+    align-items: center;
+    }
+    .header-list-lev li{
+
+    display: flex;
+    justify-content: flex-end;    
+    list-style-type: none;
+    text-align: center;
+    box-sizing: border-box;
+    }
+    #gui_nav_bar{
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    display: flex;
+    align-items: center;
+
+    }
+    .gui_nav_bar_trial{
+    border: 2px solid #75daad;
+    border-radius: .3rem;
+
+    }
+    .gui_nav_bar_trial{
+    color: #75daad !important;
+    background-color: #fff;
+    transition: all .6s;
+    }
+    .header-list-lev li a {
+    padding: 10px;
+    color: rgb(149, 149, 149);
+    text-decoration: none;
+    font-weight: 500; 
+    transition: all .3s ;
+    outline: none;
+    }
+    .gui_nav_ul li a:hover{
+    color: #1b262c;
+    }
+    .gui_nav_bar_trial:hover{
+    background-color: #75daad;
+    color: #fff !important;
+    }
+
+/* --------------End Header---------------------------------- */
 
 /* --------------Main title------------------------ */
 #gui_trial_title{
     text-align: center;
-    padding: 50px 0 ;
+    padding: 200px 0 40px 0 ;
     background-color: rgb(58, 58, 114);
 
 }
@@ -108,7 +180,6 @@ body{
     font-weight: bold;
 }
 /* ----------------------------------------------------- */
-
 /* -------------Success in the air---------------------- */
 #gui_trial_success{
     
@@ -170,9 +241,7 @@ body{
     display: block;
     border-radius: 30px;
 }
-
 /* --------------------Graham Davidson quoteblock-------------------------------------- */
-
 #gui_graham{
     display: flex;
     flex-direction: column;    
@@ -202,9 +271,7 @@ body{
     font-size:1.3em;
     color: grey;
 }
-
 /* ---------------------Question & Answers---------------------------------- */
-
 #gui_faq{
     color: black;
     padding: 50px;
@@ -252,11 +319,149 @@ body{
     font-size: 1.2em;
     background-color: #dcebf0;
 }
+/* --------Footer------- */
+footer{
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    }
+    .part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    }
+    .logo-footer{
+    width: 12rem;
+    display: flex;
+    justify-content: center;   
+    }
+    .logo-footer img{
+    width: 100%;
+    height: auto;
+    }
+    .copyright P{
+    font-size: 1.2rem;
+    color: #999;
+    letter-spacing: .15rem;
+    }
 
+
+                /*footer part 2--------*/
+    .part2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    }
+    .footer-lists, .social-list{
+    list-style: none;
+    margin: 0rem;
+    padding: 0rem;
+    }
+    .footer-lists-items{
+    padding: .1rem;
+    margin: .2rem .4rem;
+    }
+    .footer-lists-items a{
+    text-decoration: none;
+    color: #999;
+    font-size: 1.3rem;
+    transition: color .5s;
+    cursor: pointer;
+
+    } 
+    .footer-lists-items a:hover{
+    color: #222;
+    }
+        /*end of footer part 2-----*/
+        /*footer  part 3------*/
+
+    .part3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .social-list{
+    display: flex;
+    }
+    .social-list li a{
+    font-size: 2rem;
+    padding-left: .9rem;
+    color: #222;
+    transition: all .5s;
+    }
+    .social-list li:hover a{ 
+    color: rgb(14, 146, 10);
+    }
+        /*end of footer part 3------*/
 /* ----------------------------------------------------- */
 /* ---------------responsive design-------------------- */
+@media screen and (max-width: 960px){
+/**nav bar***/ 
 
-@media screen and (max-width: 959px){
+.wraper-lev{
+    justify-content: space-between;
+}
+
+/*****toggle  styling****/
+
+.header-logo-lev a:first-child img{
+    display: none;
+}
+.header-logo-lev a:last-child img{
+    display:inline-block ;
+    width: 2.5rem;
+}
+.menu-icon-lev{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-icon-lev input{
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+.line1-menu , .line2-menu , .line3-menu{
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #111111;
+    border-radius: 3px;
+    z-index: 2;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.55s ease;
+}
+#menu{
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+    top: 4rem;
+    right: -.1rem;
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    height: 50rem;
+    padding: 5rem 1rem 1rem 1rem;
+    transition: all .6S;
+    background-color: rgb(255, 255, 255);
+}
+#menu li{
+    padding: 2rem;
+    border-bottom: 1px solid #999;
+}
+
     #gui_trial_subscription{
     
         padding: 20px 0;
@@ -420,8 +625,8 @@ body{
 #gui_faq{
     color: black;
     padding: 50px;
-    margin: 60px 0 0 0;
-    padding: 20px;
+    margin: 60px 0 90px 0;
+  
     
     background-color: rgb(255, 255, 255);
 }
@@ -465,9 +670,73 @@ body{
     font-size: 1.2em;
     background-color: #dcebf0;
 }
-
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 30REM;
+    
 }
-/* ----------------------------------------------------- */
+.part1, .part2, .part3 {
+    padding-bottom: 2rem ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    
+}
+.footer-lists-items a{
+    text-decoration: none;
+    color: #999;
+    font-size: 1rem;
+} 
+
+.footer-lists{
+    width :100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+    /************* grid system media **************/
+
+    @media screen and (max-width: 960px){
+
+        .mob0{ display: none; }
+        .mob1{ width: 8.33%; box-sizing: border-box;}
+        .mob2{ width: 16.66%; box-sizing: border-box; }
+        .mob3{ width: 25%; box-sizing: border-box;}
+        .mob4{ width: 33.33%; box-sizing: border-box;}
+        .mob5{ width: 41.66%; box-sizing: border-box;}
+        .mob6{ width: 50%; box-sizing: border-box; }
+        .mob7{ width: 58.33%; box-sizing: border-box;}
+        .mob8{ width: 66.66%; box-sizing: border-box; }
+        .mob9{ width: 75%; box-sizing: border-box;}
+        .mob10{ width: 83.33%; box-sizing: border-box; }
+        .mob11{ width: 91.66%; box-sizing: border-box; }
+        .mob12{ width: 100%; box-sizing: border-box; }
+        }
+        @media screen and (min-width: 960px){
+        
+        .dsk0{ display: none; }
+        .dsk1{ width: 8.33%;  box-sizing: border-box; }
+        .dsk2{ width: 16.66%;  box-sizing: border-box;  }
+        .dsk3{ width: 25%;  box-sizing: border-box; }
+        .dsk4{ width: 33.33%;  box-sizing: border-box; }
+        .dsk5{ width: 41.66%;  box-sizing: border-box; }
+        .dsk6{ width: 50%;  box-sizing: border-box; }
+        .dsk7{ width: 58.33%;  box-sizing: border-box; }
+        .dsk8{ width: 66.66%;  box-sizing: border-box; }
+        .dsk9{ width: 75%;  box-sizing: border-box; }
+        .dsk10{ width: 83.33%;  box-sizing: border-box; }
+        .dsk11{ width: 91.66%;  box-sizing: border-box; }
+        .dsk12{ width: 100%;  box-sizing: border-box; }
+        }
+        /*************End of grid system media **************/
+/* ----------------End esponsive design trial.html------------------------------------- */
 
 
 
