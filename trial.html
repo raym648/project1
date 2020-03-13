@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,6 @@
 
 <header>
     <script>
-
         function burgerMenu() {
             var menu = document.getElementById("menu");
             if (menu.style.opacity == 0) {
@@ -22,31 +22,30 @@
             }
         }
 
-   
-    /*function closeMenu{
-        var menu = document.getElementById("menu");
-        menu.style.opacity = O;
-    }*/
 
-    //we gonna catch the selected element (aka menu);
-    // by using some javascript methods :)
-    // 'n we store it into a variable called toggleMenuButton'
-    var btn = document.getElementById("toggleMenuButton");
+        /*function closeMenu{
+            var menu = document.getElementById("menu");
+            menu.style.opacity = O;
+        }*/
 
-// then, we add some event listeners on it (in order to catch user events like "click")
-// when we click on the selected button, it' s gonna call the burgermenu function, that's what we call a "callback function".
-    
-    btn.addEventListener("click", burgerMenu);
-    //btn.addEventListener("click", closeMenu)
-    //btn.removeEventListener("click", burgerMenu);
-    
-</script>
+        //we gonna catch the selected element (aka menu);
+        // by using some javascript methods :)
+        // 'n we store it into a variable called toggleMenuButton'
+        var btn = document.getElementById("toggleMenuButton");
+
+        // then, we add some event listeners on it (in order to catch user events like "click")
+        // when we click on the selected button, it' s gonna call the burgermenu function, that's what we call a "callback function".
+
+        btn.addEventListener("click", burgerMenu);
+        //btn.addEventListener("click", closeMenu)
+        //btn.removeEventListener("click", burgerMenu);
+    </script>
     <!--start navbar-->
     <nav id="gui_nav_bar">
         <!-- container of nav-->
         <div class="wraper-lev">
             <!--menu toggle-->
-            <div class="menu-icon-lev" id="toggleMenuButton" onclick ="burger-menu">
+            <div class="menu-icon-lev" id="toggleMenuButton" onclick="burger-menu">
                 <!--<input type="checkbox" />-->
                 <div class="line1-menu"></div>
                 <div class="line2-menu"></div>
@@ -57,41 +56,41 @@
             <div class="header-logo-lev dsk3">
                 <a class="dsk-logo" href="index.html"><img src="https://cdn.freelogovectors.net/wp-content/uploads/2016/12/treehouse-logo.png" alt="veev"></a>
                 <a class="mob-logo" href="index.html"><img src="https://webhostingforstudents.com/wp-content/uploads/2014/08/Treehouse-Logo.png" alt="tgvev"></a>
-            </div>   
+            </div>
             <!--end page logo-->
             <!-- navigation lists-->
-            <div class="header-list-lev dsk7 ">  
+            <div class="header-list-lev dsk7 ">
                 <ul id="menu" class="gui_nav_ul">
                     <li class="first-nav-lev"><a href="https://teamtreehouse.com/techdegree">Techdegree</a></li>
-                    <li class="first-nav-lev"><a href="team.index">Team</a></li>
+                    <li class="first-nav-lev"><a href="team.html">Team</a></li>
                     <li class="third-nav-lev"><a href="signin.html">Sign in</a></li>
                 </ul>
                 <ul>
-                    <li><a class="gui_nav_bar_trial" href="">Free trial</a></li>
+                    <li><a class="gui_nav_bar_trial" href="trial.html">Free trial</a></li>
                 </ul>
             </div>
             <!-- end navigation list-->
         </div>
-        <!--end container of nav-->    
+        <!--end container of nav-->
     </nav>
 </header>
-    <!--end of nav-->
+<!--end of nav-->
 
 <body>
-    
+
     <section id="gui_trial_title">
         <h1>Start creating with code and design today</h1>
         <p>Join 80,000 students</p>
     </section>
 
-    <section id="gui_trial_subscription" >
+    <section id="gui_trial_subscription">
         <div class="gui_trial_subscription_element">
             <h2>Techdegree</h2>
             <h3>Create a job-ready portfolio</h3>
             <p>You’ll create projects, review real code, and get your portfolio ready to shine.</p>
-            <p class="price" >$199/mo</p>
+            <p class="price">$199/mo</p>
             <ul>
-                <li class="gui_first_item" >Everything from Basic and Pro </li>
+                <li class="gui_first_item">Everything from Basic and Pro </li>
                 <li>Curated curriculum and projects</li>
                 <li>Personalized feedback on your code</li>
                 <li>Self-paced and flexible scheduling</li>
@@ -103,46 +102,46 @@
             <h2>Pro</h2>
             <h3>Taking your coding goals seriously?</h3>
             <p>Dive into full library access and new beta tools.</p>
-            <p class="price" >$49/mo</p>
+            <p class="price">$49/mo</p>
             <ul>
-                <li class="gui_first_item" >Everything from Basic </li>
+                <li class="gui_first_item">Everything from Basic </li>
                 <li>Unlimited access, including bonus content</li>
                 <li>Access to new beta features</li>
                 <li>Download videos for offline learning</li>
-            </ul> 
-            <a href="">Start a free 7 day trial</a>   
-                
+            </ul>
+            <a href="">Start a free 7 day trial</a>
+
         </div>
         <div class="gui_trial_subscription_element">
             <h2>Basic</h2>
             <h3>Give coding a try</h3>
             <p>This plan is low risk and high reward!</p>
-            <p class="price" >$25/mo</p>
+            <p class="price">$25/mo</p>
             <ul>
                 <li>On-demand, expert-led video courses</li>
                 <li>Interactive practice sessions</li>
                 <li>Access to our online community of fellow students</li>
-            </ul> 
+            </ul>
             <a href="">Start a free 7 day trial</a>
         </div>
         <div class="gui_trial_subscription_element">
             <h2>For Teams</h2>
             <h3>Need to train 2 or more members of a team?</h3>
             <p>We have custom solutions for any size company.</p>
-            <p class="price" >Contact us</p>
+            <p class="price">Contact us</p>
             <ul>
-                <li class="gui_first_item" >Everything from Basic and Pro </li>
+                <li class="gui_first_item">Everything from Basic and Pro </li>
                 <li>Dedicated customer success team</li>
                 <li>Ability for team members to test out of content</li>
                 <li>Customized learning tracks for company-specific goals</li>
                 <li>Robust reporting on individual success</li>
                 <li>Flexible licensing options</li>
-            </ul> 
+            </ul>
             <a href="">Learn more</a>
         </div>
     </section>
 
-    <section id="gui_trial_success" >
+    <section id="gui_trial_success">
         <h1>Success in the air</h1>
         <ul>
             <li>
@@ -172,51 +171,52 @@
         </ul>
     </section>
 
-    <section id="gui_graham" >
-        <p class="gui_graham_text" >Treehouse not only provided a great learning foundation for what I do on a daily basis… I now have friends across the globe, who I would never have met had it not been for Treehouse. I definitely would not be where I am today in terms of development both personally and professionally if it wasn’t for this community.</p>
-        <p class="gui_graham_autor" >-Graham Davidson Birmingham, England</p>
+    <section id="gui_graham">
+        <p class="gui_graham_text">Treehouse not only provided a great learning foundation for what I do on a daily basis… I now have friends across the globe, who I would never have met had it not been for Treehouse. I definitely would not be where I am today in terms of development
+            both personally and professionally if it wasn’t for this community.</p>
+        <p class="gui_graham_autor">-Graham Davidson Birmingham, England</p>
     </section>
 
     <section id="gui_faq">
         <h2>Questions and Answers</h2>
-        <div id="gui_faq_container" >
-            <div class="gui_faq_element" >
+        <div id="gui_faq_container">
+            <div class="gui_faq_element">
                 <h3>How does the 7-day free trial work?</h3>
-                <p>The free trial gives you access to all of the great Treehouse content that you would get as a paying customer for free for 7 days. You can cancel at any time during your trial and you won't be charged. If you love it, then you don't have to do anything and your paid subscription will start at the end of the 7 day trial.</p>
+                <p>The free trial gives you access to all of the great Treehouse content that you would get as a paying customer for free for 7 days. You can cancel at any time during your trial and you won't be charged. If you love it, then you don't have
+                    to do anything and your paid subscription will start at the end of the 7 day trial.</p>
             </div>
-            <div class="gui_faq_element" >
+            <div class="gui_faq_element">
                 <h3>Will I need any special software/hardware/books?</h3>
                 <p>You won't need any special hardware or OS. You can even write code inside the Treehouse App using a feature called Workspaces. If you're planning to learn iOS, then you will need to own a Mac.</p>
-            </div>        
-            <div class="gui_faq_element" >
+            </div>
+            <div class="gui_faq_element">
                 <h3>Am I tied to a contract?</h3>
                 <p>There are absolutely no contracts with Treehouse. You can cancel or pause your account at any time.</p>
-            </div>        
-            <div class="gui_faq_element" >
+            </div>
+            <div class="gui_faq_element">
                 <h3>What kind of skills do I need to use Treehouse?</h3>
                 <p>None! Treehouse teaches both beginners and experts. We’re continually adding content to our ever growing library.</p>
-            </div>        
-            <div class="gui_faq_element" >
+            </div>
+            <div class="gui_faq_element">
                 <h3>How long does it usually take for me to build something after learning from Treehouse?</h3>
                 <p>While everyone learns at a different pace, students who put in several hours each day to apply what they’ve learned should be able to build their own projects in 6-12 months.</p>
-            </div>        
-            <div class="gui_faq_element" >
+            </div>
+            <div class="gui_faq_element">
                 <h3>How often do you release new content?</h3>
                 <p>Weekly! You can refer to our content roadmap for more details.</p>
-            </div>        
-            <div class="gui_faq_element" >
+            </div>
+            <div class="gui_faq_element">
                 <h3>What currency are your prices in?</h3>
                 <p>U.S. Dollars.</p>
             </div>
         </div>
-        
+
         </div>
     </section>
 
 
 </body>
 <script>
-
     function burgerMenu() {
         var menu = document.getElementById("menu");
         if (menu.style.opacity == 0) {
@@ -227,63 +227,63 @@
     }
 
 
-/*function closeMenu{
-    var menu = document.getElementById("menu");
-    menu.style.opacity = O;
-}*/
+    /*function closeMenu{
+        var menu = document.getElementById("menu");
+        menu.style.opacity = O;
+    }*/
 
-//we gonna catch the selected element (aka menu);
-// by using some javascript methods :)
-// 'n we store it into a variable called toggleMenuButton'
-var btn = document.getElementById("toggleMenuButton");
+    //we gonna catch the selected element (aka menu);
+    // by using some javascript methods :)
+    // 'n we store it into a variable called toggleMenuButton'
+    var btn = document.getElementById("toggleMenuButton");
 
-// then, we add some event listeners on it (in order to catch user events like "click")
-// when we click on the selected button, it' s gonna call the burgermenu function, that's what we call a "callback function".
+    // then, we add some event listeners on it (in order to catch user events like "click")
+    // when we click on the selected button, it' s gonna call the burgermenu function, that's what we call a "callback function".
 
-btn.addEventListener("click", burgerMenu);
-//btn.addEventListener("click", closeMenu)
-//btn.removeEventListener("click", burgerMenu);
-
+    btn.addEventListener("click", burgerMenu);
+    //btn.addEventListener("click", closeMenu)
+    //btn.removeEventListener("click", burgerMenu);
 </script>
 <footer>
     <!--footer part 1 -->
-        <div class="part1">
-            <div class="logo-footer">
-                <img src="https://cdnifyblog.a.cdnify.io/wp-content/uploads/2014/01/Treehouse-Logo.png" alt="threehouse">
-            </div>
-            <div class="copyright">
-                <p>&copy;Treehouse Island, Inc.</p>
-            </div>
+    <div class="part1">
+        <div class="logo-footer">
+            <img src="https://cdnifyblog.a.cdnify.io/wp-content/uploads/2014/01/Treehouse-Logo.png" alt="threehouse">
         </div>
+        <div class="copyright">
+            <p>&copy;Treehouse Island, Inc.</p>
+        </div>
+    </div>
     <!--end of footer part 1 -->
     <!--footer part 2-->
-        <div class="part2">
-            <ul class="footer-lists">
-                <li class="footer-lists-items"><a href="https://teamtreehouse.com/about" class="footer-lists-links">About</a></li>
-                <li class="footer-lists-items"><a href="https://teamtreehouse.com/jobs" class="footer-lists-links">Creers</a></li>
-                <li class="footer-lists-items"><a href="https://teamtreehouse.com/terms" class="footer-lists-links">Terms</a></li>
-                <li class="footer-lists-items"><a href="https://teamtreehouse.com/privacy" class="footer-lists-links">Privacy</a></li>
-            </ul>
-            <ul class="footer-lists">
-                <li class="footer-lists-items"><a href="https://teamtreehouse.com/support" class="footer-lists-links">Contact</a></li>
-                <li class="footer-lists-items"><a href="https://blog.teamtreehouse.com/?_ga=2.61778218.762863192.1583781198-645364046.1583781198" class="footer-lists-links">Blog</a></li>
-                <li class="footer-lists-items"><a href="https://teamtreehouse.com/affiliate-program" class="footer-lists-links">Affiliate Program</a></li>
-                <li class="footer-lists-items"><a href="https://join.teamtreehouse.com/talentpath/?_ga=2.61778218.762863192.1583781198-645364046.1583781198" class="footer-lists-links">TalentPath</a></li>
-            </ul>
-        </div>
-        <!--end of footer part 2-->
-        <!--footer part 3-->
-         <div class="part3">
-             <ul class="social-list">
-                <li><a class="social-item" href="https://fr-fr.facebook.com/"><i class="fab fa-facebook"></i></a></li>
-                <li><a class="social-item" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                <li><a class="social-item" href="https://youtube.com/"><i class="fab fa-youtube"></i></a></li>
-                <li><a class="social-item" href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
-                <li><a class="social-item" href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
-             </ul>
-         </div>       
-        <!--end of footer part 2-->
+    <div class="part2">
+        <ul class="footer-lists">
+            <li class="footer-lists-items"><a href="https://teamtreehouse.com/about" class="footer-lists-links">About</a></li>
+            <li class="footer-lists-items"><a href="https://teamtreehouse.com/jobs" class="footer-lists-links">Creers</a></li>
+            <li class="footer-lists-items"><a href="https://teamtreehouse.com/terms" class="footer-lists-links">Terms</a></li>
+            <li class="footer-lists-items"><a href="https://teamtreehouse.com/privacy" class="footer-lists-links">Privacy</a></li>
+        </ul>
+        <ul class="footer-lists">
+            <li class="footer-lists-items"><a href="https://teamtreehouse.com/support" class="footer-lists-links">Contact</a></li>
+            <li class="footer-lists-items"><a href="https://blog.teamtreehouse.com/?_ga=2.61778218.762863192.1583781198-645364046.1583781198" class="footer-lists-links">Blog</a></li>
+            <li class="footer-lists-items"><a href="https://teamtreehouse.com/affiliate-program" class="footer-lists-links">Affiliate Program</a></li>
+            <li class="footer-lists-items"><a href="https://join.teamtreehouse.com/talentpath/?_ga=2.61778218.762863192.1583781198-645364046.1583781198" class="footer-lists-links">TalentPath</a></li>
+        </ul>
+    </div>
+    <!--end of footer part 2-->
+    <!--footer part 3-->
+    <div class="part3">
+        <ul class="social-list">
+            <li><a class="social-item" href="https://fr-fr.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="social-item" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="social-item" href="https://youtube.com/"><i class="fab fa-youtube"></i></a></li>
+            <li><a class="social-item" href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a class="social-item" href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+    <!--end of footer part 2-->
 
 
 </footer>
+
 </html>
